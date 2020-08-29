@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CB1BE4A-EC28-49F2-854B-131AF27A822C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Library_Managenemt.My.MyApplication</StartupObject>
+    <RootNamespace>Library_Managenemt</RootNamespace>
+    <AssemblyName>Library_Managenemt</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Library_Managenemt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Library_Managenemt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BunifuDataViz 1.0.1">
+      <HintPath>..\..\Bunifu_Dataviz_1.0.1_Downloadly.ir\BunifuDataViz 1.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\E\a-program\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book_Edit.Designer.vb">
+      <DependentUpon>Book_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Entry.Designer.vb">
+      <DependentUpon>Book_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Search.Designer.vb">
+      <DependentUpon>Book_Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_View.Designer.vb">
+      <DependentUpon>Book_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category_Entry.Designer.vb">
+      <DependentUpon>Category_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbord.Designer.vb">
+      <DependentUpon>Dashbord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleted_Request_View.Designer.vb">
+      <DependentUpon>Deleted_Request_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted_Request_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Book_Issue.Designer.vb">
+      <DependentUpon>Faculty_Book_Issue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Book_Issue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Book_Return.Designer.vb">
+      <DependentUpon>Faculty_Book_Return.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Book_Return.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Delete.Designer.vb">
+      <DependentUpon>Faculty_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Edit.Designer.vb">
+      <DependentUpon>Faculty_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Registation.Designer.vb">
+      <DependentUpon>Faculty_Registation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Registation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_View.Designer.vb">
+      <DependentUpon>Faculty_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fine_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fine_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Issued_Book_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Issued_Book_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.vb">
+      <DependentUpon>Startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Delete_Batch.Designer.vb">
+      <DependentUpon>Student_Delete_Batch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Delete_Batch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Fine_Report.Designer.vb">
+      <DependentUpon>Student_Fine_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Fine_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module_DataBase.vb" />
+    <Compile Include="Module_Validation.vb" />
+    <Compile Include="Module_Variables.vb" />
+    <Compile Include="Parent_Window.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent_Window.Designer.vb">
+      <DependentUpon>Parent_Window.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ready_Book_View.Designer.vb">
+      <DependentUpon>Ready_Book_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ready_Book_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request_Book_offline.Designer.vb">
+      <DependentUpon>Request_Book_offline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Request_Book_offline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request_Book_View.Designer.vb">
+      <DependentUpon>Request_Book_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Request_Book_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request_Book_View_Indivisual_Popup.Designer.vb">
+      <DependentUpon>Request_Book_View_Indivisual_Popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Request_Book_View_Indivisual_Popup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Book_Issue.Designer.vb">
+      <DependentUpon>Student_Book_Issue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Book_Issue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Book_Return.Designer.vb">
+      <DependentUpon>Student_Book_Return.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Book_Return.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Delete.Designer.vb">
+      <DependentUpon>Student_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Edit.Designer.vb">
+      <DependentUpon>Student_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Issued_Book_Report.Designer.vb">
+      <DependentUpon>Student_Issued_Book_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Issued_Book_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Registation.Designer.vb">
+      <DependentUpon>Student_Registation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Registation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Reoprt.Designer.vb">
+      <DependentUpon>Student_Reoprt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Reoprt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_View.Designer.vb">
+      <DependentUpon>Student_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Transaction.Designer.vb">
+      <DependentUpon>View_Transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Book_Edit.resx">
+      <DependentUpon>Book_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Entry.resx">
+      <DependentUpon>Book_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Search.resx">
+      <DependentUpon>Book_Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_View.resx">
+      <DependentUpon>Book_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category_Entry.resx">
+      <DependentUpon>Category_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord.resx">
+      <DependentUpon>Dashbord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deleted_Request_View.resx">
+      <DependentUpon>Deleted_Request_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Book_Issue.resx">
+      <DependentUpon>Faculty_Book_Issue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Book_Return.resx">
+      <DependentUpon>Faculty_Book_Return.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Delete.resx">
+      <DependentUpon>Faculty_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Edit.resx">
+      <DependentUpon>Faculty_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Registation.resx">
+      <DependentUpon>Faculty_Registation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_View.resx">
+      <DependentUpon>Faculty_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fine_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fine_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issued_Book_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Issued_Book_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Member_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent_Window.resx">
+      <DependentUpon>Parent_Window.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ready_Book_View.resx">
+      <DependentUpon>Ready_Book_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request_Book_offline.resx">
+      <DependentUpon>Request_Book_offline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request_Book_View.resx">
+      <DependentUpon>Request_Book_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request_Book_View_Indivisual_Popup.resx">
+      <DependentUpon>Request_Book_View_Indivisual_Popup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Book_Issue.resx">
+      <DependentUpon>Student_Book_Issue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Book_return.resx">
+      <DependentUpon>Student_Book_Return.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Delete.resx">
+      <DependentUpon>Student_Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Delete_Batch.resx">
+      <DependentUpon>Student_Delete_Batch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Edit.resx">
+      <DependentUpon>Student_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Fine_Report.resx">
+      <DependentUpon>Student_Fine_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Issued_Book_Report.resx">
+      <DependentUpon>Student_Issued_Book_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Registation.resx">
+      <DependentUpon>Student_Registation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Reoprt.resx">
+      <DependentUpon>Student_Reoprt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_View.resx">
+      <DependentUpon>Student_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Transaction.resx">
+      <DependentUpon>View_Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app1.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
